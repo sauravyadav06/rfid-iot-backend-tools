@@ -10,7 +10,7 @@ This repository contains three major components that work together in a simulate
 
 ### 1. 🔌 MQTT Engine
 
-Acts as the **core backend processor**. It:
+Acts as the **core backend processor**
 
 - Subscribes to incoming MQTT topics where RFID readers publish scanned tag data.
 - Uses a dynamic **mapping system** to determine where to route tag data.
@@ -19,7 +19,7 @@ Acts as the **core backend processor**. It:
 
 ### 2. ⚙️ Load Tester
 
-A simulation tool used to **stress-test the MQTT engine**. It:
+A simulation tool used to **stress-test the MQTT engine**
 
 - Simulates 50+ RFID readers sending data concurrently.
 - Helps verify the stability, scalability, and performance of the system.
@@ -27,7 +27,7 @@ A simulation tool used to **stress-test the MQTT engine**. It:
 
 ### 3. 🛢️ Mongo Dumper
 
-Acts as a **data backup system**. It:
+Acts as a **data backup system**
 
 - Listens to the same incoming data stream (whether published or not).
 - Dumps all incoming raw tag data into a MongoDB database for traceability and backup.
